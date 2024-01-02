@@ -9,8 +9,8 @@
 <body style="height: 100%; margin: 0">
   <div id="container" style="height: 100%"></div>
 
-  <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.4.3/files/dist/echarts.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/echarts.min.js"></script>
   <!-- Uncomment this line if you want to dataTool extension
   <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.4.3/files/dist/extension/dataTool.min.js"></script>
   -->
@@ -36,10 +36,10 @@
       useDirtyRect: false
     });
     var app = {};
-    var ROOT_PATH = 'https://echarts.apache.org/examples';
+    // var ROOT_PATH = 'https://echarts.apache.org/examples';
     var option;
 
-    $.getJSON('population.json', function (data) {
+    $.getJSON('https://gyy4git.github.io/assets/population.json', function (data) {
   data = data
     .filter(function (dataItem) {
       return dataItem[2] > 0;
@@ -63,7 +63,7 @@
           intensity: 0
         },
         ambientCubemap: {
-          texture: 'data-gl/asset/canyon.hdr',
+          texture: 'https://echarts.apache.org/examples/data-gl/asset/canyon.hdr',
           exposure: 1,
           diffuseIntensity: 0.5
         }
