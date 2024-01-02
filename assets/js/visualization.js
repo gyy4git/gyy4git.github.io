@@ -30,7 +30,7 @@ const projects = [
     Githublink: "https://prod-ca-a.online.tableau.com/t/gyy4tableau/views/SalesforceNonprofitProgramManagement/Clients?:origin=card_share_link&:embed=n",
   },
   {
-    title: "Market Basket Analysis",
+    title: "MarketBasketAnalysis",
     cardImage: "assets/images/project-page/basket.png",
     description: "",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
